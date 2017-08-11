@@ -1,0 +1,22 @@
+@font-face {
+  font-family: bungee;
+  src: url('bungee.shade.ttf'),
+}
+#header {
+  background-color: #003b49;
+  display: flex;
+  font-family: bungee;
+  color: #fe901d;
+  text-align: center;
+}
+
+
+
+
+#footer {
+  background-color: #fe901d;
+  display: flex;
+  font-family: bungee;
+  color: #003b49;
+  text-align: center;
+}
