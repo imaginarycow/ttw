@@ -6,7 +6,9 @@ export default class Footer extends Component {
 
 
     return (
-      <h3 id="footer">{this.props.title}</h3>
+      <div id="footer">
+        <h3 id="footer">{this.props.title}</h3>
+      </div>
     );
   }
 }
