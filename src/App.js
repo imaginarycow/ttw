@@ -10,11 +10,14 @@ class App extends Component {
   render() {
 
     return (
-      <div id="site">
+      <div>
         <Header title='Thats-the-Worst'/>
-        <Body title="Container" />
-        <Footer title='Powered by React'/>
+        <div id="site">
+          <Body title="Container" />
+          <Footer title='Powered by React'/>
+        </div>
       </div>
+
     );
   }
 }

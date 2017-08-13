@@ -5,23 +5,27 @@
 #site {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 4fr auto;
+  grid-template-rows: 4fr auto;
   grid-template-areas:
-    "header"
     "body"
-    "footer"
+    "footer";
 }
 #header {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+  padding-bottom: 10px;
+  width: 100%;
   background-color: #003b49;
-  grid-area: header;
   text-align: center;
   font-family: bungee;
   color: #fe901d;
 }
 #footer {
-  background-color: #fe901d;
+  background-color: #003b49;
   grid-area: footer;
-  color: #003b49;
+  color: #fe901d;
+  font-family: bungee;
   text-align: center;
 }
 #body {
@@ -38,6 +42,7 @@
   grid-template-areas:
     "jumbotron"
     "adSpace1"
+    "matchUps"
 }
 #adSpace1 {
   grid-area: adSpace1;
@@ -65,9 +70,8 @@
   #site {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto 4fr auto;
+    grid-template-rows: 4fr auto;
     grid-template-areas:
-      "header header header"
       "body body body"
       "footer footer footer"
   }
