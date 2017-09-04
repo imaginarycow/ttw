@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Matchup from './matchup.js';
+import {MainMatch} from '../data/mock-data.js';
+import CommentArea from './comment_area.js';
 import '../App.css';
-import image1 from '../assets/image1.png';
-import image2 from '../assets/image2.png';
 
 export default class Jumbotron extends Component {
 
@@ -10,7 +10,14 @@ export default class Jumbotron extends Component {
     return (
       <div id="jumbotron">
         <h1>{this.props.title}</h1>
-        <Matchup image1={image1} image2={image2} image1Votes="1124" image2Votes="1045"/>
+        <div id="matchUp">
+          <h4 id="vote1">Votes: {MainMatch.image1Votes}</h4>
+          <img id="image1" src={MainMatch.image1} alt="image1"/>
+          <h3 id="or">Vs</h3>
+          <h4 id="vote2">Votes: {MainMatch.image2Votes}</h4>
+          <img id="image2" src={MainMatch.image2} alt="image2"/>
+          <CommentArea comments={MainMatch.comments}/>
+        </div>
       </div>
     );
   }

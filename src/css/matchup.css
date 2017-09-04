@@ -2,16 +2,22 @@
   font-family: bungee;
   src: url('../bungee.shade.ttf'),
 }
+#matchupContainer {
+  display: flex;
+  width: 48%;
+  margin: 20px 0px;
+}
 #matchUp {
   background-color: #fe901d;
   color: #003b49;
   font-family: bungee;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
     "... vote1 ... vote2 ..."
-    "... image1 or image2 ...";
+    "... image1 or image2 ..."
+    "... comments comments comments ...";
   margin-bottom: 10px;
 }
 #image1 {
@@ -29,6 +35,18 @@
 #or {
   grid-area: or;
 }
+#comments {
+  background-color: #003b49;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  grid-area: comments;
+}
+#comments h5 {
+  color: #fe901d;
+
+}
 #matchUp img {
-  width: 80%;
+  width: 100%;
 }

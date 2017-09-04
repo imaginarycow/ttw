@@ -5,14 +5,14 @@ import Body from './components/body.js';
 import './App.css';
 
 
-class App extends Component {
+export default class App extends Component {
 
   render() {
 
     return (
       <div>
-        <Header title='Thats-the-Worst'/>
         <div id="site">
+          <Header title='Thats-the-Worst'/>
           <Body title="Container" />
           <Footer title='Powered by React'/>
         </div>
@@ -21,5 +21,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

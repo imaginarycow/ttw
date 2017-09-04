@@ -1,0 +1,22 @@
+#comment {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-rows: 20px;
+  grid-template-areas:
+    "button comment img";
+}
+#comment img {
+  grid-area: img;
+  border-radius: 10px;
+}
+#comment h6 {
+  color: white;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  grid-area: comment;
+}
+#comment button {
+  grid-area: button;
+  text-align: center;
+}

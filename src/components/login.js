@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Router, { Route } from "react-browser-router";
+import LoginS from '../loginScreen.js';
 import '../App.css';
 
 export default class Login extends Component {
@@ -6,7 +9,8 @@ export default class Login extends Component {
   render() {
     return (
       <div id="login">
-        <a href="some places">{this.props.title}</a>
+          <Link to="/login">{this.props.title}</Link>
+          <Route path="/login" component={LoginS}/>
       </div>
     );
   }
